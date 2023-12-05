@@ -14,6 +14,40 @@ header {
     padding: 2% 2%;
   }
    
+   
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BCC6CC;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #566D7E;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+header h1 {
+    color:#0000A0 ;
+}
 
 header h1 {
     color:#0000A0 ;
