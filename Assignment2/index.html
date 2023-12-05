@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="empId">Employee Id:</label>
+                <input type="text" placeholder="Enter Employee Id" id="empId" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Enter Proper Employee Id </small>
+            </div>
+
+            <div class="form-control">
+                <label for="empName">Employee Name:</label>
+                <input type="text" placeholder="Enter Employee name" id="empName" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Enter Proper Employee Name </small>
+            </div>
+
+            <div class="form-control">
+                <label for="address">Address:</label>
+                <input type="address" placeholder="Enter Employee Address" id="address" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Enter Correct Address</small>
+            </div>
+            <div class="form-control">
+                <label for="designation">Designation:</label>
+                <input type="designation" placeholder="Enter Employee Address" id="designation" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Enter Correct Address</small>
+            </div>
+            <div class="form-control">
+                <label for="Amount">Loan Amount:</label>
+                <input type="amount" placeholder="Loan Amount" id="amount" onchange="calculate();" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Enter Correct Loan Amount </small>
+            </div>
+            <div class="form-control">
+                <label for="date">DOJ:</label>
+                <input type="date" placeholder="Date Of Loan Taken" id="date" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Select Proper Date</small>
+            </div>
+            <div class="form-control">
+                <label for="interest">interest:</label>
+                <input type="interest" placeholder="Interest" id="interest" onchange="calculate();" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Enter Interest</small>
+            </div>
+            <div class="form-control">
+                <label for="Mdate">Maturity Date</label>
+                <input type="text" placeholder="Maturity Date" id="Mdate" onchange="calculate();" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-times-circle"></i>
+                <small>Select Maturity Date </small>
+            </div>
+
+
+            <button onClick="writeValues(form)" >Calculate</button>
+            <br/>
+            <table>
+
+                output : 
+                <!-- <tr>
+                    <td>Employee Id </td>
+                <td><span id="empId " class="output"></span></td>
+            </tr> -->
+                <tr>
+                    <td>Monthly payment:</td>
+                    <td><span class="output" id="payment"></span></td>
+                </tr>
+                <tr>
+                    <td>Total payment:</td>
+                    <td><span class="output" id="total"></span></td>
+                </tr>
+                <tr>
+                    <td>Total interest:</td>
+                    <td><span class="output" id="totalinterest"></span></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="credit">Made with <span style="color:tomato">❤</span> by <a
+            href="https://www.learningrobo.com/">Shobha</a></div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
