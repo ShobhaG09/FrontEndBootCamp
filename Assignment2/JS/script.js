@@ -148,6 +148,7 @@ const interest = form.interest.value;
 const Mdate = form.Mdate.value;
     
 
-    document.getElementById('UserOutput').innerHTML = 'Employee Id :  '+ empId + 'Employee Name  :' + empName + '  Address :' + address + ' Designation :' + designation+'Amount :'+ amount +' Loan Date :'+date +'Interest :'+interest+'Maturity Year :'+Mdate;
+   
+    document.getElementById('UserOutput').innerHTML = 'Employee Id : ' + empId + '<br> <hr>'+'Employee Name  :' + empName +'<br> <hr>'+ '  Address :' + address +'<br> <hr>'+ ' Designation :' + designation+'<br> <hr>'+'Amount :'+ amount +'<br> <hr>'+' Loan Date :'+date +'<br> <hr>'+'Interest :'+interest+'<br><hr>'+ 'Maturity Year :'+Mdate+'<br><hr>';
   
 }
